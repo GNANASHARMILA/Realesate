@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ADDFFF;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 50px auto;
+}
+
+.contact-box {
+	background: #fff;
+	display: flex;
+}
+
+.contact-left {
+	flex-basis: 60%;
+	padding: 40px 60px;
+}
+
+.contact-right {
+	flex-basis: 40%;
+	padding: 40px;
+	background: #1c00b5;
+	color: #fff;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+.container p {
+	margin-bottom: 40px;
+}
+
+.input-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.input-row .input-group {
+	flex-basis: 45%;
+}
+
+input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	padding-bottom: 5px;
+}
+
+textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 10px;
+	box-sizing: order-box;
+}
+
+label {
+	margin-bottom: 6px;
+	display: block;
+	color: #1c00b5;
+}
+
+button {
+	background: #1c00b5;
+	width: 100px;
+	border: none;
+	outline: none;
+	color: #fff;
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+	color: #1c00b5;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.contact-right h3 {
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+tr td:first-child {
+	padding-right: 20px;
+}
+
+tr td {
+	padding-top: 20px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Contact Us</h1>
+		<p>
+			We would love to response to your queries and help you succeed.<br>Feel
+			free to get in touch with us
+		</p>
+		<div class="contact-box">
+			<div class="contact-left">
+				<h3>Sent your request</h3>
+				<form>
+					<div class="input-row">
+
+						<div class="input-group">
+
+							<label>Name</label> <input type="text" placeholder="Enter a name">
+						</div>
+						<div class="input-group">
+
+							<label>Mobile Number</label> <input type="text"
+								placeholder="Enter a phonenumber">
+						</div>
+					</div>
+					<div class="input-row">
+
+						<div class="input-group">
+
+							<label>Email</label> <input type="email"
+								placeholder="Enter a email">
+						</div>
+						<div class="input-group">
+
+							<label>Service needed</label> <input type="text"
+								placeholder="Product">
+						</div>
+					</div>
+					<label>Message</label>
+					<textarea rows="5" placeholder="Your message"></textarea>
+
+					<button>Send</button>
+				</form>
+			</div>
+			<div class="contact-right">
+				<h3>Reach Us</h3>
+				<table>
+					<tr>
+						<td>Email</td>
+						<td>realestate@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td>+91 77755 55777</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td>#211,ground floor,7th cross,<br> 1st main road,
+							Besant Nagar, Chennai.
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<button onclick="goBack()">Back</button>
+
+	<script>
+		function goBack() {
+			window.location.href = "first.jsp";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Finalize Deal</title>
+<style>
+body {
+	background-image:
+		url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBmlU8vRKI7UOTfHNN03Z42Z5jqSACg_6MrnfdilSvGg&usqp=CAU&ec=48600113");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	margin: 50px auto;
+	padding: 20px;
+	max-width: 400px;
+	background-color: Peach;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #333;
+}
+
+input[type="submit"] {
+	background-color: #008CBA;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #006D9F;
+}
+</style>
+
+</head>
+<body>
+	<h1>Finalize Deal</h1>
+	<form action="finalizeDeal.jsp" method="post">
+		<label for="buyer_name">Buyer/Renter Name:</label> <input type="text"
+			id="buyer_name" name="buyer_name" required><br> <br>
+		<label for="buyer_email">Buyer/Renter Email:</label> <input
+			type="email" id="buyer_email" name="buyer_email" required><br>
+		<br> <label for="buyer_password">Buyer/Renter Password:</label> <input
+			type="tel" id="buyer_password" name="buyer_password" required><br>
+		<br> <label for="buyer_phone">Buyer/Renter Phone:</label> <input
+			type="tel" id="buyer_phone" name="buyer_phone" required><br>
+		<br> <input type="submit" value="Finalize Deal">
+	</form>
+</body>
+</html>

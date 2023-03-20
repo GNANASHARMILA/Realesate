@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Manage Details</title>
+</head>
+<body>
+	<h1>Manage Details for Selling/Renting (or Buying)</h1>
+	<form action="manageDetails.jsp" method="post">
+		<label for="Location">Location:</label> <input type="text"
+			id="Location" name="Location"><br> <label
+			for="Property_Type">Property_Type:</label> <input type="text"
+			id="Property_Type" name="Property_Type"><br> <input
+			type="submit" value="Submit">
+	</form>
+
+	<button onclick="goBack()">Back</button>
+
+	<script>
+		function goBack() {
+			window.location.href = "admin.jsp";
+		}
+	</script>
+</body>
+</html>

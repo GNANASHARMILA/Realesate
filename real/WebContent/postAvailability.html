@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Check Availability</title>
+<style>
+body {
+	background-image:
+		url("https://cdn.vectorstock.com/i/preview-2x/12/73/3d-checklist-on-clipboard-paper-with-gold-coins-vector-43801273.webp");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+	<h1>
+		<center>Check Availability</center>
+	</h1>
+	<form action="real" method="post">
+		<input type="hidden" name="action" value="checkAvailability">
+
+		<label for="Location"><b>Location:</b></label><br> <input
+			type="text" id="Location" name="Location" required><br>
+		<br> <label for="Property_type"><b>Property_Type:</b></label><br>
+		<select id="Property_type" name="Property_type">
+			<option value="home">Home</option>
+			<option value="apartment">Apartment</option>
+			<option value="plot">Plot</option>
+		</select><br> <br> <label for="budget"><b>Budget:</b></label><br>
+		<input type="text" id="Budget" name="Budget" required><br>
+		<br> <input type="submit" value="Check Availability">
+	</form>
+
+
+
+	<button onclick="goBack()">Back</button>
+
+	<script>
+        function goBack() {
+            window.location.href = "seller.jsp";
+        }
+    </script>
+</body>
+</html>

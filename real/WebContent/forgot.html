@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update Password</title>
+<style>
+body {
+	background-image:
+		url("https://img.freepik.com/free-photo/plant-against-blue-wall-background-with-copy-space_53876-98324.jpg?w=2000&t=st=1678955450~exp=1678956050~hmac=160a11fdbc59f7e8a9855a66c53fefb67459b25c3df9387d7e6319d9ec49b52c");
+	font-family: Arial, sans-serif;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ECF0F1;
+	border-radius: 60px;
+	box-shadow: 0px 0px 10px peach;
+	text-align: center;
+}
+
+h1 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+input[type="email"], input[type="password"] {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	font-size: 16px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background-color: #0062cc;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 5px;
+}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1>Update Password</h1>
+		<form action="forgot.jsp" method="post">
+			<label>Email:</label> <input type="email" name="Email" required><br>
+			<br> <label>New Password:</label> <input type="password"
+				name="NewPassword" required><br> <br> <input
+				type="submit" value="Update Password">
+		</form>
+	</div>
+</body>
+</html>
